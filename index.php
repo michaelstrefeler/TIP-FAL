@@ -38,34 +38,12 @@
 	<?php include_once "../TIP-FAL/php/include/nav.php"; ?>
 
 	<section class="hero-area bg-1 text-center overly">
-		<!-- Container Start -->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<!-- Header Contetnt -->
 					<div class="content-block">
-						<h1>Buy & Sell Near You </h1>
-						<p>Join the millions who buy and sell from each other <br> everyday in local communities around
-							the world</p>
-						<div class="short-popular-category-list text-center">
-							<h2>Popular Category</h2>
-							<ul class="list-inline">
-								<li class="list-inline-item">
-									<a href=""><i class="fa fa-bed"></i> Hotel</a></li>
-								<li class="list-inline-item">
-									<a href=""><i class="fa fa-grav"></i> Fitness</a>
-								</li>
-								<li class="list-inline-item">
-									<a href=""><i class="fa fa-car"></i> Cars</a>
-								</li>
-								<li class="list-inline-item">
-									<a href=""><i class="fa fa-cutlery"></i> Restaurants</a>
-								</li>
-								<li class="list-inline-item">
-									<a href=""><i class="fa fa-coffee"></i> Cafe</a>
-								</li>
-							</ul>
-						</div>
+						<h1>Arrêtez le gaspillage de livres!</h1>
+						<p>Aidez nous à diminuer le gaspillage de livres en vendant les vôtres à des futurs étudiants. Trop de livres sont gaspillés par an.</p>
 					</div>
 					<!-- Advance Search -->
 					<div class="advance-search">
@@ -88,24 +66,15 @@
 								</div>
 							</div>
 						</form>
-
 					</div>
-
 				</div>
 			</div>
 		</div>
-		<!-- Container End -->
 	</section>
-
-	<!--===================================
-	=            Client Slider            =
-	====================================-->
-
 
 	<!--===========================================
 	=            Popular deals section            =
 	============================================-->
-
 	<section class="popular-deals section bg-gray">
 		<div class="container">
 			<div class="row">
@@ -147,7 +116,7 @@
 										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
 										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
 										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item"><i class="fa fa-star"></i></li>
+										<li class="list-inline-item selected"><i class="fa fa-star-half"></i></li>
 									</ul>
 								</div>
 							</div>

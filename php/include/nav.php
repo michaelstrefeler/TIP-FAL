@@ -28,9 +28,7 @@
 									<div class="dropdown-menu dropdown-menu-right">
 										<a class="dropdown-item" href="../../../TIP-FAL/php/category.php?page=category">Category</a>
 										<a class="dropdown-item" href="../../../TIP-FAL/php/single.php?page=Single page">Single Page</a>
-										<a class="dropdown-item" href="../../../TIP-FAL/php/store-single.php?page=Store single">Store Single</a>
 										<a class="dropdown-item" href="../../../TIP-FAL/php/user-profile.php?page=User profile">User Profile</a>
-										<a class="dropdown-item" href="../../../TIP-FAL/php/submit-coupon.php?page=Submit coupon">Submit Coupon</a>
 										<a class="dropdown-item" href="../../../TIP-FAL/php/blog.php?page=blog">Blog</a>
 										<a class="dropdown-item" href="../../../TIP-FAL/php/single-blog.php?page=Single post">Single Post</a>
 									</div>
