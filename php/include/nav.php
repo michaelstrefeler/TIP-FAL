@@ -17,7 +17,7 @@
 									<a class="nav-link" href="../../../TIP-FAL/index.php?page=Acceuil">Acceuil</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="../../../TIP-FAL/php/dashboard.php?page=dashboard">Dashboard</a>
+									<a class="nav-link" href="../../../TIP-FAL/php/dashboard.php?page=dashboard">Tableau de bord</a>
 								</li>
 								<li class="nav-item dropdown dropdown-slide">
 									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
@@ -48,7 +48,7 @@
 							</ul>
 							<ul class="navbar-nav ml-auto mt-10">
 								<li class="nav-item">
-									<a class="nav-link login-button" href="../../../TIP-FAL/php/login.php?page=Accueil">Login</a>
+									<a class="nav-link login-button" href="../../../TIP-FAL/php/login.php?page=Se connecter">Se connecter</a>
 								</li>
 							</ul>
 						</div>

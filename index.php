@@ -42,8 +42,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="content-block">
-						<h1>Arrêtez le gaspillage de livres!</h1>
-						<p>Aidez nous à diminuer le gaspillage de livres en vendant les vôtres à des futurs étudiants. Trop de livres sont gaspillés par an.</p>
+						<h1>Arrêtez de gaspiller vos livres !</h1>
+						<p>Aidez nous à diminuer le gaspillage de livres en vendant les vôtres à des futurs étudiants. Trop de livres sont gaspillés par an. Nous voulons que ce ne soit plus le cas.</p>
 					</div>
 					<!-- Advance Search -->
 					<div class="advance-search">
@@ -53,15 +53,15 @@
 								<div class="col-lg-6 col-md-12">
 									<div class="block d-flex">
 										<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search"
-											placeholder="Search for store">
+											placeholder="Édition du livre">
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-12">
 									<div class="block d-flex">
 										<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search"
-											placeholder="Search for store">
+											placeholder="Titre du livre">
 										<!-- Search Button -->
-										<button class="btn btn-main">SEARCH</button>
+										<button class="btn btn-main">RECHERCHE</button>
 									</div>
 								</div>
 							</div>

@@ -15,20 +15,13 @@
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-8 align-item-center">
           <div class="border border">
-            <h3 class="bg-gray p-4">Register Now</h3>
+            <h3 class="bg-gray p-4">Créer un compte</h3>
             <form action="#">
               <fieldset class="p-4">
-                <input type="email" placeholder="Email*" class="border p-3 w-100 my-2">
-                <input type="password" placeholder="Password*" class="border p-3 w-100 my-2">
-                <input type="password" placeholder="Confirm Password*" class="border p-3 w-100 my-2">
-                <div class="loggedin-forgot d-inline-flex my-3">
-                  <input type="checkbox" id="registering" class="mt-1">
-                  <label for="registering" class="px-2">By registering, you accept our <a
-                      class="text-primary font-weight-bold" href="terms-condition.html">Terms & Conditions</a></label>
-                </div>
-                <button type="submit"
-                  class="d-block py-3 px-4 bg-primary text-white border-0 rounded font-weight-bold">Register
-                  Now</button>
+                <input type="email" placeholder="Email" class="border p-3 w-100 my-2">
+                <input type="password" placeholder="Mot de passe" class="border p-3 w-100 my-2">
+                <input type="password" placeholder="Confirmation du mot de passe" class="border p-3 w-100 my-2">
+                <button type="submit" class="d-block py-3 px-4 bg-primary text-white border-0 rounded font-weight-bold">Créer un compte</button>
               </fieldset>
             </form>
           </div>
