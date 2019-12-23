@@ -35,7 +35,12 @@
 </head>
 
 <body class="body-wrapper">
-	<?php include_once "../TIP-FAL/php/include/nav.php"; ?>
+	<?php 
+		include_once "../TIP-FAL/php/include/nav.php"; 
+		include_once '../TIP-FAL/php/include/daoConnection.php';
+		$connection = new DaoConnection();
+		$connector = $connection->dbOpenConnection();
+	?>
 
 	<section class="hero-area bg-1 text-center overly">
 		<div class="container">

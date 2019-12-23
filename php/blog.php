@@ -8,7 +8,9 @@
 
 <body class="body-wrapper">
 	<!-- Barre de navigation -->
-	<?php include 'include/nav.php'; ?>
+	<?php
+		include 'include/nav.php';
+	?>
 
 	<section class="page-title">
 		<div class="container">

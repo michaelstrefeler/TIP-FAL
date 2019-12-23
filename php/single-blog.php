@@ -22,7 +22,7 @@
 							<li class="list-inline-item">by <a href="">Admin</a></li>
 							<li class="list-inline-item">Nov 22, 2016</li>
 						</ul>
-						<img src="images/blog/post-4.jpg" alt="article-01">
+						<img src="../images/blog/post-4.jpg" alt="article-01">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt
 							labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco
 							laboris nisi ut aliquip.ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -102,27 +102,27 @@
 							<h5 class="widget-header">Related Store</h5>
 							<ul class="store-list md list-inline">
 								<li class="list-inline-item">
-									<a href=""><img src="images/popular-offer/populer-offer-02.png"
+									<a href=""><img src="../images/popular-offer/populer-offer-02.png"
 											alt="store-image"></a>
 								</li>
 								<li class="list-inline-item">
-									<a href=""><img src="images/popular-offer/populer-offer-03.png"
+									<a href=""><img src="../images/popular-offer/populer-offer-03.png"
 											alt="store-image"></a>
 								</li>
 								<li class="list-inline-item">
-									<a href=""><img src="images/popular-offer/populer-offer-04.png"
+									<a href=""><img src="../images/popular-offer/populer-offer-04.png"
 											alt="store-image"></a>
 								</li>
 								<li class="list-inline-item">
-									<a href=""><img src="images/popular-offer/populer-offer-05.png"
+									<a href=""><img src="../images/popular-offer/populer-offer-05.png"
 											alt="store-image"></a>
 								</li>
 								<li class="list-inline-item">
-									<a href=""><img src="images/popular-offer/populer-offer-06.png"
+									<a href=""><img src="../images/popular-offer/populer-offer-06.png"
 											alt="store-image"></a>
 								</li>
 								<li class="list-inline-item">
-									<a href=""><img src="images/popular-offer/populer-offer-07.png"
+									<a href=""><img src="../images/popular-offer/populer-offer-07.png"
 											alt="store-image"></a>
 								</li>
 							</ul>
