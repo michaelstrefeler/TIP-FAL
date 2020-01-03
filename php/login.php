@@ -1,3 +1,8 @@
+<?php
+if(session_status() == PHP_SESSION_NONE){
+  session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,15 +50,12 @@
                 for($x = 0; $x<$nbrUsers; $x++){
                   //If pour vérifier le login et le mot de passe
                   if($_POST['username'] == $users[$x]['username'] && password_verify($_POST['password'], $users[$x]['password'])){
-                    if(session_status() == PHP_SESSION_NONE){
-                      session_start();
-                    }
                     $_SESSION['username']= $users[$x]['username'];
                     $isRealAccount = true;
                   }
                 }
                 if($isRealAccount == true){
-                  echo "<meta http-equiv='refresh' content='0; URL=user-profile.php?page=User profile'>";
+                  echo "<meta http-equiv='refresh' content='0; URL=user-profile.php?page=Utilisateur'>";
                 }else{
                   echo "<p style='color: red'>Login ou mot de passe erroné!</p>";
                 }
