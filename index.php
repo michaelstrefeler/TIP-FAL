@@ -37,9 +37,8 @@
 <body class="body-wrapper">
 	<?php 
 		include_once "../TIP-FAL/php/include/nav.php"; 
-		include_once '../TIP-FAL/php/include/daoConnection.php';
-		$connection = new DaoConnection();
-		$connector = $connection->dbOpenConnection();
+		include_once '../TIP-FAL/php/include/objDB.php';
+		$connection = new objDB();
 	?>
 
 	<section class="hero-area bg-1 text-center overly">
