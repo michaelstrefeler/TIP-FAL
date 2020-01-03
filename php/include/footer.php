@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-6 col-12">
                 <div class="copyright">
-                    <p>Copyright © 2019 Foire aux livres</p>
+                    <p>Copyright © 2020 Foire aux livres</p>
                 </div>
             </div>
         </div>
