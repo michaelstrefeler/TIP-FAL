@@ -45,7 +45,7 @@ class objDB
     }
 
     // Fonction pour executer les requêtes SQL
-    private function executeSqlRequest($strSQLRequest){
+    private function executeSqlRequest($strRequest){
 		$options = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 		$this->objConnexion = new PDO("mysql:host=" . self::DB_HOST . ";dbname=" . self::DB_NAME . "", self::DB_USER, self::DB_PASSWORD,$options);
 		
@@ -53,7 +53,7 @@ class objDB
             $this->dbConnect();
         }
 
-        $query = $this->objConnexion->prepare($strSQLRequest);
+        $query = $this->objConnexion->prepare($strRequest);
         try {
             $query->execute();
         } catch (PDOException $e) {
@@ -108,6 +108,12 @@ class objDB
 
         // lancement de la requête et retour d'un boolean
         return $this->blnRequest($sqlRequest, $userInfo);
+    }
+
+    // Fonction pour récupérer les données d'un utilisateur 
+    function getSingleUserInfo($username){
+        $sqlRequest = "SELECT * FROM user where username ='$username'";
+        return $this->getRequest($sqlRequest);
     }
 
     // Fonction pour récupérer les données de tous les utilisateurs de la base de données

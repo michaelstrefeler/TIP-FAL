@@ -338,8 +338,6 @@
 								</ul>
 							</div>
 						</div> <!-- /Category List -->
-
-
 					</div>
 				</div>
 			</div>
