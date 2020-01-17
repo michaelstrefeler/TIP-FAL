@@ -33,7 +33,8 @@ CREATE TABLE book(
         releaseYear Int NOT NULL ,
         releaseDate Varchar (60) NOT NULL,
 	genre	    text NOT NULL,
-        imagePath   text NOT NULL
+        imagePath   text NOT NULL,
+        sold        Int(1) NOT NULL,
 	,CONSTRAINT book_PK PRIMARY KEY (idBook)
 )ENGINE=InnoDB;
 
