@@ -16,7 +16,8 @@ CREATE TABLE user(
         firstName      Varchar (60) NOT NULL ,
         lastName       Varchar (60) NOT NULL ,
         meansOfContact Varchar (30) NOT NULL ,
-        contactInfo    Varchar (255) NOT NULL
+        contactInfo    Varchar (255) NOT NULL,
+        userImagePath  Text NOT NULL
 	,CONSTRAINT user_PK PRIMARY KEY (username)
 )ENGINE=InnoDB;
 
@@ -32,8 +33,8 @@ CREATE TABLE book(
         language    Varchar (10) NOT NULL ,
         releaseYear Int NOT NULL ,
         releaseDate Varchar (60) NOT NULL,
-	genre	    text NOT NULL,
-        imagePath   text NOT NULL,
+	genre	    Text NOT NULL,
+        imagePath   Text NOT NULL,
         sold        Int(1) NOT NULL,
 	,CONSTRAINT book_PK PRIMARY KEY (idBook)
 )ENGINE=InnoDB;
