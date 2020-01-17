@@ -32,10 +32,10 @@
 									if(isset($_SESSION['username'])){
 										if ($active=="Tableau de bord")
 										{
-											echo '<li class="nav-item active"><a class="nav-link" href="../../../TIP-FAL/php/dashboard.php?page=Tableau de bord">Tableau de bord</a></li>';
+											echo '<li class="nav-item active"><a class="nav-link" href="../../../TIP-FAL/php/dashboard.php?page=Tableau de bord&action=1">Tableau de bord</a></li>';
 										}else
 										{
-											echo '<li class="nav-item"><a class="nav-link" href="../../../TIP-FAL/php/dashboard.php?page=Tableau de bord">Tableau de bord</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="../../../TIP-FAL/php/dashboard.php?page=Tableau de bord&action=1">Tableau de bord</a></li>';
 										}
 									}
 								?>

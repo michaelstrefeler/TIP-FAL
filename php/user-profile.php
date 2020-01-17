@@ -42,15 +42,15 @@
 						<div class="widget user-dashboard-menu">
 							<ul>
 								<li>
-									<a href="dashboard-my-ads.php"><i class="fa fa-book"></i> Mes livres</a></li>
+									<a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-book"></i> Mes livres</a></li>
 								<li>
-									<a href="dashboard-favourite-ads.php"><i class="fa fa-star"></i> Livres en vente<span>5</span></a>
+									<a href="dashboard-favourite-ads.php"><i class="fa fa-star"></i> Livres en vente<span>0</span></a>
 								</li>
 								<li>
-									<a href="dashboard-archived-ads.php"><i class="fa fa-file-archive-o"></i> Livres vendus<span>12</span></a>
+									<a href="dashboard-archived-ads.php"><i class="fa fa-file-archive-o"></i> Livres vendus<span>0</span></a>
 								</li>
 								<li>
-									<a href="logout.php"><i class="fa fa-cog"></i> Se déconnecter</a>
+									<a href="logout.php"><i class="fa fa-sign-out"></i> Se déconnecter</a>
 								</li>
 								<li>
 									<!-- TODO: Créer une fonction php pour supprimer le compte -->
@@ -64,7 +64,7 @@
 					<!-- Modifier vos informations personnelles -->
 					<div class="widget personal-info">
 						<h3 class="widget-header user">Modifier vos informations personnelles</h3>
-						<form action="#">
+						<form method="post">
 							<div class="form-group">
 								<label for="first-name">Prénom</label>
 								<input type="text" class="form-control" id="first-name">
@@ -85,7 +85,7 @@
 					<!-- Modifier le mot de passe -->
 					<div class="widget change-password">
 						<h3 class="widget-header user">Changer de mot de passe</h3>
-						<form action="#">
+						<form method="post">
 							<div class="form-group">
 								<label for="current-password">Mot de passe actuel</label>
 								<input type="password" class="form-control" id="current-password">
@@ -104,7 +104,7 @@
 					<!-- Changer de moyen de contact -->
 					<div class="widget change-email mb-0">
 						<h3 class="widget-header user">Changer de moyen de contact</h3>
-						<form action="#">
+						<form method="post">
 							<div class="form-group">
 								<select id="meansofcontact" name="meansOfContact" class="border p-3 w-100 my-2" required>
 									<option selected disabled>Moyen de contact</option>
