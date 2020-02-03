@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<nav class="navbar navbar-expand-lg  navigation">
+					<nav class="navbar navbar-expand-lg navigation">
 						<a class="navbar-brand" href="../../../TIP-FAL/index.php?page=Accueil">
 							<img src="../../../TIP-FAL/images/logo.png" alt="">
 						</a>

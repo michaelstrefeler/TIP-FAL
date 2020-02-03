@@ -17,6 +17,10 @@
 		}
 		$username = $_SESSION['username'];
 		$userInfo = $objDB->getSingleUserInfo($username);
+		$firstName = $userInfo[0]['firstName'];
+		$lastName = $userInfo[0]['lastName'];
+		$contactInfo = $userInfo[0]['contactInfo'];
+		$meansOfContact = $userInfo[0]['meansOfContact'];
 	?>
 	<!--==================================
 	=         Profile utilsateur         =
@@ -26,35 +30,33 @@
 			<div class="row">
 				<div class="col-md-10 offset-md-1 col-lg-4 offset-lg-0">
 					<div class="sidebar">
-						<!-- User Widget -->
+						<!-- "widget" utilisateur -->
 						<div class="widget user-dashboard-profile">
-							<!-- User Image -->
+							<!-- photo de profil -->
 							<div class="profile-thumb">
 								<img src="../images/user/user-thumb.jpg" alt="" class="rounded-circle">
 							</div>
-							<!-- User Name -->
+							<!-- nom complet et pseudo -->
 							<?php
-								echo'<h5 class="text-center">'. $userInfo[0]["firstName"] .' '. $userInfo[0]["lastName"] .' </h5>';
-								echo'<p>Pseudo : '. $userInfo[0]["username"] .'</p>';
+								echo'<h5 class="text-center">'. $firstName .' '. $lastName .' </h5>';
+								echo'<p>Pseudo : '. $username .'</p>';
 							?>
 						</div>
-						<!-- Dashboard Links -->
+						<!-- Liens du tableau de bord -->
 						<div class="widget user-dashboard-menu">
 							<ul>
 								<li>
-									<a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-book"></i> Mes livres</a></li>
+									<a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-book"></i>Livres en vente</a></li>
 								<li>
-									<a href="dashboard-favourite-ads.php"><i class="fa fa-star"></i> Livres en vente<span>0</span></a>
+									<a href="dashboard-archived-ads.php"><i class="fa fa-file-archive-o"></i>Livres vendus<!--<span>0</span>--></a>
 								</li>
 								<li>
-									<a href="dashboard-archived-ads.php"><i class="fa fa-file-archive-o"></i> Livres vendus<span>0</span></a>
+									<a href="logout.php"><i class="fa fa-sign-out"></i>Se déconnecter</a>
 								</li>
 								<li>
-									<a href="logout.php"><i class="fa fa-sign-out"></i> Se déconnecter</a>
-								</li>
-								<li>
-									<!-- TODO: Créer une fonction php pour supprimer le compte -->
+									<!-- TODO: Créer une fonction php pour supprimer le compte
 									<a href="delete-account.php"><i class="fa fa-power-off"></i>Supprimer le compte</a>
+									-->
 								</li>
 							</ul>
 						</div>
@@ -64,14 +66,14 @@
 					<!-- Modifier vos informations personnelles -->
 					<div class="widget personal-info">
 						<h3 class="widget-header user">Modifier vos informations personnelles</h3>
-						<form method="post">
+						<form method="post" enctype="multipart/form-data">
 							<div class="form-group">
 								<label for="first-name">Prénom</label>
-								<input type="text" class="form-control" id="first-name">
+								<input type="text" class="form-control" id="first-name" value="<?php echo $firstName ?>">
 							</div>
 							<div class="form-group">
 								<label for="last-name">Nom</label>
-								<input type="text" class="form-control" id="last-name">
+								<input type="text" class="form-control" id="last-name" value="<?php echo $lastName ?>">
 							</div>
 							<!-- File chooser -->
 							<div class="form-group choose-file">
@@ -107,19 +109,34 @@
 						<form method="post">
 							<div class="form-group">
 								<select id="meansofcontact" name="meansOfContact" class="border p-3 w-100 my-2" required>
-									<option selected disabled>Moyen de contact</option>
-									<option value="tel">Téléphone</option>
-									<option value="email">Email</option>
-									<option value="autre">Autre</option>
+									<option disabled>Moyen de contact</option>
+									<?php
+										switch($meansOfContact){	
+											case "tel":
+												echo'<option value="tel" selected>Téléphone</option>
+												<option value="email">Email</option>
+												<option value="autre">Autre</option>';
+											break;
+											case "email":
+												echo'<option value="tel">Téléphone</option>';
+												echo'<option value="email" selected>Email</option>';
+												echo'<option value="autre">Autre</option>';
+											break;
+											case "autre":
+												echo'<option value="tel">Téléphone</option>
+												<option value="email">Email</option>
+												<option value="autre" selected>Autre</option>';
+											break;
+										}
+									?>
 								</select> 
 							</div>
 							<div class="form-group">
 								<label for="contactInfo">Téléphone ou E-mail</label>
-								<input type="text" class="form-control" id="contactInfo">
+								<input type="text" class="form-control" id="contactInfo" value="<?php echo $contactInfo; ?>">
 							</div>
+							<button class="btn btn-transparent">Changer de moyen de contact</button>
 							</div>
-							<!-- Submit Button -->
-							<button class="btn btn-transparent">Change email</button>
 						</form>
 					</div>
 				</div>
