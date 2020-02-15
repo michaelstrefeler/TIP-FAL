@@ -15,6 +15,11 @@
 		}
 		$username = $_SESSION['username'];
 		$userInfo = $objDB->getSingleUserInfo($username);
+		$firstName = $userInfo[0]['firstName'];
+		$lastName = $userInfo[0]['lastName'];
+		$contactInfo = $userInfo[0]['contactInfo'];
+		$meansOfContact = $userInfo[0]['meansOfContact'];
+		$photo = $userInfo[0]['userImagePath'];
 
 		if(isset($_GET['action'])){
 			$action = $_GET['action'];
@@ -35,12 +40,14 @@
 						<div class="widget user-dashboard-profile">
 							<!-- User Image -->
 							<div class="profile-thumb">
-								<img src="../images/user/user-thumb.jpg" alt="" class="rounded-circle">
+								<?php
+									echo'<img src="../images/user/'. $photo .'" alt="photo de profile" class="rounded-circle">';
+								?>
 							</div>
 							<!-- User Name -->
 							<?php
-								echo'<h5 class="text-center">'. $userInfo[0]["firstName"] .' '. $userInfo[0]["lastName"] .' </h5>';
-								echo'<p>Pseudo : '. $userInfo[0]["username"] .'</p>';
+								echo'<h5 class="text-center">'. $firstName .' '. $lastName .' </h5>';
+								echo'<p>Pseudo : '. $username .'</p>';
 							?>
 							<a href="../php/user-profile.php?page=Utilisateur" class="btn btn-main-sm">Modifier votre profil</a>
 						</div>
