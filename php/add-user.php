@@ -10,6 +10,7 @@
         ':lastName'          => $_POST["lastName"],
         ':meansOfContact'    => $_POST["meansOfContact"],
         ':contactInfo'       => $_POST["contactInfo"],
+        ':userImagePath'     => "user-thumb.jpg",
     );
     
     $addUser=$objDB->addNewUser($userInfo);

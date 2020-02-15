@@ -88,9 +88,7 @@ class objDB
         $this->objConnexion = new PDO("mysql:host=" . self::DB_HOST . ";dbname=" . self::DB_NAME . "", self::DB_USER, self::DB_PASSWORD, $options);
 
         $query = $this->objConnexion->prepare($sqlRequest);
-
         try{
-
             $blnResult = $query->execute($tabParams);
         }
         catch(PDOException $e)
@@ -104,10 +102,15 @@ class objDB
     // Fonction pour ajouter un utilisateur à la base de données
     function addNewUser(array $userInfo){
         // requête sql
-        $sqlRequest = "INSERT INTO `user`(`username`, `password`, `firstName`, `lastName`, `meansOfContact`, `contactInfo`) VALUES (:username, :password, :firstName, :lastName, :meansOfContact, :contactInfo)";
+        $sqlRequest = "INSERT INTO `user`(`username`, `password`, `firstName`, `lastName`, `meansOfContact`, `contactInfo`, `userImagePath`) VALUES (:username, :password, :firstName, :lastName, :meansOfContact, :contactInfo, :userImagePath)";
 
         // lancement de la requête et retour d'un boolean
         return $this->blnRequest($sqlRequest, $userInfo);
+    }
+
+    function editUserImage($neededData){
+        $sqlRequest = "UPDATE `user` SET `userImagePath` = :path  WHERE username = :username";
+        return $this->blnRequest($sqlRequest, $neededData);
     }
 
     // Fonction pour récupérer les données d'un utilisateur 

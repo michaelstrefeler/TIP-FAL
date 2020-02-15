@@ -21,6 +21,7 @@
 		$lastName = $userInfo[0]['lastName'];
 		$contactInfo = $userInfo[0]['contactInfo'];
 		$meansOfContact = $userInfo[0]['meansOfContact'];
+		$photo = $userInfo[0]['userImagePath'];
 	?>
 	<!--==================================
 	=         Profile utilsateur         =
@@ -34,7 +35,9 @@
 						<div class="widget user-dashboard-profile">
 							<!-- photo de profil -->
 							<div class="profile-thumb">
-								<img src="../images/user/user-thumb.jpg" alt="" class="rounded-circle">
+								<?php
+									echo'<img src="../images/user/'. $photo .'" alt="photo de profile" class="rounded-circle">';
+								?>
 							</div>
 							<!-- nom complet et pseudo -->
 							<?php
@@ -66,7 +69,7 @@
 					<!-- Modifier vos informations personnelles -->
 					<div class="widget personal-info">
 						<h3 class="widget-header user">Modifier vos informations personnelles</h3>
-						<form method="post" enctype="multipart/form-data">
+						<form method="post">
 							<div class="form-group">
 								<label for="first-name">Prénom</label>
 								<input type="text" class="form-control" id="first-name" value="<?php echo $firstName ?>">
@@ -75,13 +78,17 @@
 								<label for="last-name">Nom</label>
 								<input type="text" class="form-control" id="last-name" value="<?php echo $lastName ?>">
 							</div>
-							<!-- File chooser -->
+							<button class="btn btn-transparent">Enregistrer les modifications</button>
+						</form>
+						<br><br>
+						<form method="post" enctype="multipart/form-data" action="edit-user-photo.php">
 							<div class="form-group choose-file">
 								<i class="fa fa-user text-center"></i>
-								<input type="file" class="form-control-file d-inline" id="input-file">
+								<input type='hidden' name='MAX_FILE_SIZE' value='1048576'/>
+								<label for="input-file">Photo de profil</label>
+								<input type="file" class="form-control-file d-inline" id="input-file" name="input-file">
 							</div>
-							<!-- Submit button -->
-							<button class="btn btn-transparent">Enregistrer les modifications</button>
+							<button class="btn btn-transparent">Changer de photo de profil</button>
 						</form>
 					</div>
 					<!-- Modifier le mot de passe -->
