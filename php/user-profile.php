@@ -49,9 +49,9 @@
 						<div class="widget user-dashboard-menu">
 							<ul>
 								<li>
-									<a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-book"></i>Livres en vente</a></li>
+									<a href="dashboard.php?page=Tableau de bord&action=2"><i class="fa fa-book"></i>Mes livres en vente</a></li>
 								<li>
-									<a href="dashboard-archived-ads.php"><i class="fa fa-file-archive-o"></i>Livres vendus<!--<span>0</span>--></a>
+									<a href="dashboard.php?page=Tableau de bord&action=3"><i class="fa fa-file-archive-o"></i>Mes livres vendus</a>
 								</li>
 								<li>
 									<a href="logout.php"><i class="fa fa-sign-out"></i>Se déconnecter</a>

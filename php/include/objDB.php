@@ -45,7 +45,7 @@ class objDB
     }
 
     // Fonction pour executer les requêtes SQL
-    private function executeSqlRequest($strRequest){
+    private function executeSqlRequest(string $strRequest){
 		$options = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 		$this->objConnexion = new PDO("mysql:host=" . self::DB_HOST . ";dbname=" . self::DB_NAME . "", self::DB_USER, self::DB_PASSWORD,$options);
 		
@@ -65,7 +65,7 @@ class objDB
     }
 
     // Fonction pour aller prendre des données dans la base de données
-    private function getRequest($sqlRequest){
+    private function getRequest(string $sqlRequest){
         $tab_values = array();
 
         $result = $this->executeSqlRequest($sqlRequest);
@@ -82,7 +82,7 @@ class objDB
     }
     
     // Fonction pour ajouter, modifier ou supprimer qqch de la base de données
-    private function blnRequest($sqlRequest,$tabParams=null)
+    private function blnRequest(string $sqlRequest,array $tabParams=null)
     {
         $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
         $this->objConnexion = new PDO("mysql:host=" . self::DB_HOST . ";dbname=" . self::DB_NAME . "", self::DB_USER, self::DB_PASSWORD, $options);
@@ -99,6 +99,20 @@ class objDB
         return $blnResult;
     }
 
+    /////////////////// Utilisateurs ///////////////////
+
+    // Fonction pour récupérer les données de tous les utilisateurs de la base de données
+    function getAllUsers(){
+        $sqlRequest = "SELECT * FROM user";
+        return $this->getRequest($sqlRequest);
+    }
+
+    // Fonction pour récupérer les données d'un utilisateur 
+    function getSingleUserInfo(string $username){
+        $sqlRequest = "SELECT * FROM user where username ='$username'";
+        return $this->getRequest($sqlRequest);
+    }
+
     // Fonction pour ajouter un utilisateur à la base de données
     function addNewUser(array $userInfo){
         // requête sql
@@ -108,25 +122,40 @@ class objDB
         return $this->blnRequest($sqlRequest, $userInfo);
     }
 
-    function editUserImage($neededData){
+    // Fonction pour modifier la photo de profil d'un utilisateur
+    function editUserImage(array $neededData){
         $sqlRequest = "UPDATE `user` SET `userImagePath` = :path  WHERE username = :username";
         return $this->blnRequest($sqlRequest, $neededData);
     }
 
-    function changeUserPassword($neededData){
+    // Fonction pour modifier le mot de passe d'un utilisateur
+    function changeUserPassword(array $neededData){
         $sqlRequest = "UPDATE `user` SET `password` = :password  WHERE username = :username";
         return $this->blnRequest($sqlRequest, $neededData);
     }
 
-    // Fonction pour récupérer les données d'un utilisateur 
-    function getSingleUserInfo($username){
-        $sqlRequest = "SELECT * FROM user where username ='$username'";
+    /////////////////// Livres ///////////////////
+
+    // Fonction pour ajouter un livre à la base de données
+    function addBook(array $bookInfo){
+        $sqlRequest = "INSERT INTO `book`(`title`, `editor`, `language`, `releaseYear`, `releaseDate`, `genre`, `bookImagePath`, `price`,`sold`) VALUES (:title, :editor, :language, :releaseYear, :releaseDate, :genre, :bookImagePath, :price, :sold)";
+        return $this->blnRequest($sqlRequest, $bookInfo);
+    }
+
+    function addtoSellsTable($sellerInfo){
+        $sqlRequest = "INSERT INTO `sells`(`username`, `idBook`) VALUES (:username, :idBook)";
+        return $this->blnRequest($sqlRequest, $sellerInfo);
+    }
+
+    // Fonction pour donner un identifiant au livre qui vient d'être créé
+    function getBookTableLength(){
+        $sqlRequest = "SELECT COUNT(*) FROM book";
         return $this->getRequest($sqlRequest);
     }
 
-    // Fonction pour récupérer les données de tous les utilisateurs de la base de données
-    function getAllUsers(){
-        $sqlRequest = "SELECT * FROM user";
+    // Fonction pour récupérer les données d'un livre 
+    function getBookData($id){
+        $sqlRequest = "SELECT * FROM book JOIN sells WHERE book.idBook ='$id'";
         return $this->getRequest($sqlRequest);
     }
 }

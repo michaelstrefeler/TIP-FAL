@@ -8,7 +8,9 @@
 <body class="body-wrapper">
 	<!-- Barre de navigation -->
 	<?php include 'include/nav.php'; ?>
-
+	<!--lien vers 1 livre 
+		"/php/book.php?page=Livres&id="
+	-->
 	<section class="page-search">
 		<div class="container">
 			<div class="row">

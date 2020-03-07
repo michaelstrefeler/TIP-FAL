@@ -57,7 +57,7 @@
 								<?php
 									switch($action){
 										default:
-											echo '<li class="active"><a href="../php/dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
+											echo '<li class="active"><a href="php/dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
 												  <li><a href="../php/dashboard.php?page=Tableau de bord&action=2"><i class="fa fa-edit"></i>Modifier un livre</a></li>
 												  <li><a href="../php/dashboard.php?page=Tableau de bord&action=3"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';
 											break;
@@ -86,16 +86,16 @@
 				<?php
 					switch($action){
 						default:
-							include_once 'include/add-book-form.php';
+							include_once 'add-book-form.php';
 							break;
 						case 1:
-							include_once 'include/add-book-form.php';
+							include_once 'add-book-form.php';
 							break;
 						case 2:
-							include_once 'include/edit-book-form.php';
+							include_once 'edit-book-form.php';
 							break;
 						case 3:
-							include_once 'include/sold-books.php';
+							include_once 'sold-books.php';
 							break;
 					}
 				?>
