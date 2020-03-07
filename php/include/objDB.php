@@ -113,6 +113,11 @@ class objDB
         return $this->blnRequest($sqlRequest, $neededData);
     }
 
+    function changeUserPassword($neededData){
+        $sqlRequest = "UPDATE `user` SET `password` = :password  WHERE username = :username";
+        return $this->blnRequest($sqlRequest, $neededData);
+    }
+
     // Fonction pour récupérer les données d'un utilisateur 
     function getSingleUserInfo($username){
         $sqlRequest = "SELECT * FROM user where username ='$username'";

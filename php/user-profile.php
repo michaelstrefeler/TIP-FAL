@@ -56,11 +56,6 @@
 								<li>
 									<a href="logout.php"><i class="fa fa-sign-out"></i>Se déconnecter</a>
 								</li>
-								<li>
-									<!-- TODO: Créer une fonction php pour supprimer le compte
-									<a href="delete-account.php"><i class="fa fa-power-off"></i>Supprimer le compte</a>
-									-->
-								</li>
 							</ul>
 						</div>
 					</div>
@@ -74,7 +69,7 @@
 								<i class="fa fa-user text-center"></i>
 								<input type='hidden' name='MAX_FILE_SIZE' value='1048576'/>
 								<label for="input-file">Photo de profil</label>
-								<input type="file" class="form-control-file d-inline" id="input-file" name="input-file">
+								<input type="file" class="form-control-file d-inline" id="input-file" name="input-file" required>
 							</div>
 							<button class="btn btn-transparent">Changer de photo de profil</button>
 						</form>
@@ -82,20 +77,34 @@
 					<!-- Modifier le mot de passe -->
 					<div class="widget change-password">
 						<h3 class="widget-header user">Changer de mot de passe</h3>
-						<form method="post">
+						<form method="post" action="edit-user-password.php">
 							<div class="form-group">
 								<label for="current-password">Mot de passe actuel</label>
-								<input type="password" class="form-control" id="current-password">
+								<input type="password" class="form-control" id="current-password" name="current-password" required>
 							</div>
 							<div class="form-group">
 								<label for="new-password">Nouveau mot de passe</label>
-								<input type="password" class="form-control" id="new-password">
+								<input type="password" class="form-control" id="new-password" name="new-password" pattern="^.{8,60}$" title="Minimum 8 caractères" required>
 							</div>
 							<div class="form-group">
 								<label for="confirm-password">Confirmation du nouveau mot de passe</label>
-								<input type="password" class="form-control" id="confirm-password">
+								<input type="password" class="form-control" id="confirm-password" name="confirm-password"  pattern="^.{8,60}$">
 							</div>
-							<button class="btn btn-transparent">Changer de mot de passe</button>
+							<script>
+								var password = document.getElementById("new-password"),
+									confirm_password = document.getElementById("confirm-password");
+
+								function validatePassword() {
+									if (password.value != confirm_password.value) {
+									confirm_password.setCustomValidity("Les mots de passe ne correspondent pas!");
+									} else {
+									confirm_password.setCustomValidity('');
+									}
+								}
+								password.onchange = validatePassword;
+								confirm_password.onkeyup = validatePassword;
+                			</script>
+							<button class="btn btn-transparent" type="submit">Changer de mot de passe</button>
 						</form>
 					</div>
 					</div>
