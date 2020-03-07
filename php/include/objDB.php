@@ -155,7 +155,7 @@ class objDB
 
     // Fonction pour récupérer les données d'un livre 
     function getBookData($id){
-        $sqlRequest = "SELECT * FROM book JOIN sells WHERE book.idBook ='$id'";
+        $sqlRequest = "SELECT * FROM book NATURAL JOIN sells WHERE book.idBook ='$id'";
         return $this->getRequest($sqlRequest);
     }
 }
