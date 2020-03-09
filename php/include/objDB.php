@@ -160,9 +160,27 @@ class objDB
     }
 
     // Fonction pour récupérer tous les livres mis en vente par un utilisateur
-    function getBooksByUser($username){
+    function getAllBooksByUser($username){
         $sqlRequest = "SELECT * FROM book NATURAL JOIN sells WHERE sells.username='$username'";
         return $this->getRequest($sqlRequest);
+    }
+
+    // Fonction pour récupérer tous les livres mis en vente par un utilisateur
+    function getBooksByUser($username){
+        $sqlRequest = "SELECT * FROM book NATURAL JOIN sells WHERE sells.username='$username' AND book.sold=0";
+        return $this->getRequest($sqlRequest);
+    }
+
+    // Fonction pour récupérer tous les livres vendus par un utilisateur
+    function getBooksSoldByUser($username){
+        $sqlRequest = "SELECT * FROM book NATURAL JOIN sells WHERE sells.username='$username' AND book.sold=1";
+        return $this->getRequest($sqlRequest);
+    }
+
+    // Fonction modife un livre
+    function editBook($idBook, $newBookData){
+        $sqlRequest = "UPDATE `book` SET `title` = :title, `editor` = :editor, `language` = :language, `releaseYear` = :releaseYear, `releaseDate` = :releaseDate, `genre` = :genre, `price` = :price, `sold`= :sold WHERE `idBook` = $idBook";
+        return $this->blnRequest($sqlRequest, $newBookData);
     }
 }
 ?>
