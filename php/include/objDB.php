@@ -158,5 +158,11 @@ class objDB
         $sqlRequest = "SELECT * FROM book NATURAL JOIN sells WHERE book.idBook ='$id'";
         return $this->getRequest($sqlRequest);
     }
+
+    // Fonction pour récupérer tous les livres mis en vente par un utilisateur
+    function getBooksByUser($username){
+        $sqlRequest = "SELECT * FROM book NATURAL JOIN sells WHERE sells.username='$username'";
+        return $this->getRequest($sqlRequest);
+    }
 }
 ?>

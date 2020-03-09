@@ -49,7 +49,7 @@
 						<div class="widget user-dashboard-menu">
 							<ul>
 								<li>
-									<a href="dashboard.php?page=Tableau de bord&action=2"><i class="fa fa-book"></i>Mes livres en vente</a></li>
+									<a href="dashboard.php?page=Tableau de bord&action=0"><i class="fa fa-book"></i>Mes livres en vente</a></li>
 								<li>
 									<a href="dashboard.php?page=Tableau de bord&action=3"><i class="fa fa-file-archive-o"></i>Mes livres vendus</a>
 								</li>
