@@ -22,9 +22,6 @@
 								<li class="nav-item <?php if ($active=="Accueil")echo 'active' ?>">
 									<a class="nav-link" href="../../../TIP-FAL/index.php?page=Accueil">Accueil</a>
 								</li>
-								<li class="nav-item <?php if ($active=="A propos")echo 'active' ?>">
-									<a class="nav-link" href="../../../TIP-FAL/php/about.php?page=A propos">À propos</a>
-								</li>
 								<li class="nav-item <?php if ($active=="Livres")echo 'active' ?>">
 									<a class="nav-link" href="../../../TIP-FAL/php/books.php?page=Livres">Livres en vente</a>
 								</li>

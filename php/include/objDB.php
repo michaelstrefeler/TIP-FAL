@@ -182,5 +182,11 @@ class objDB
         $sqlRequest = "UPDATE `book` SET `title` = :title, `editor` = :editor, `language` = :language, `releaseYear` = :releaseYear, `releaseDate` = :releaseDate, `genre` = :genre, `price` = :price, `sold`= :sold WHERE `idBook` = $idBook";
         return $this->blnRequest($sqlRequest, $newBookData);
     }
+
+    // Fonction pour récupérer les données de tous les livre 
+    function getAllBookData(){
+        $sqlRequest = "SELECT * FROM book NATURAL JOIN sells";
+        return $this->getRequest($sqlRequest);
+    }
 }
 ?>
