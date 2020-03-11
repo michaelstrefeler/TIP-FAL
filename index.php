@@ -49,303 +49,46 @@
 						<h1>Arrêtez de gaspiller vos livres !</h1>
 						<p>Aidez nous à diminuer le gaspillage de livres en vendant les vôtres à des futurs étudiants. Trop de livres sont gaspillés par an. Nous voulons que ce ne soit plus le cas.</p>
 					</div>
-					<!-- Advance Search -->
-					<div class="advance-search">
-						<form action="#">
-							<div class="row">
-								<!-- Store Search -->
-								<div class="col-lg-6 col-md-12">
-									<div class="block d-flex">
-										<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search"
-											placeholder="Édition du livre">
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-12">
-									<div class="block d-flex">
-										<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search"
-											placeholder="Titre du livre">
-										<!-- Search Button -->
-										<button class="btn btn-main">RECHERCHE</button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<!--===========================================
-	=            Popular deals section            =
-	============================================-->
-	<section class="popular-deals section bg-gray">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title">
-						<h2>Trending Ads</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, magnam.</p>
-					</div>
-				</div>
+	<section class="section">
+        <div class="text-center">
+            <div class="section-title">
+				<h2>Présentation du site</h2>
 			</div>
-			<div class="row">
-				<!-- offer 01 -->
-				<div class="col-sm-12 col-lg-4">
-					<!-- product card -->
-					<div class="product-item bg-light">
-						<div class="card">
-							<div class="thumb-content">
-								<!-- <div class="price">$200</div> -->
-								<a href="">
-									<img class="card-img-top img-fluid" src="images/products/products-1.jpg"
-										alt="Card image cap">
-								</a>
-							</div>
-							<div class="card-body">
-								<h4 class="card-title"><a href="">11inch Macbook Air</a></h4>
-								<ul class="list-inline product-meta">
-									<li class="list-inline-item">
-										<a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
-									</li>
-									<li class="list-inline-item">
-										<a href=""><i class="fa fa-calendar"></i>26th December</a>
-									</li>
-								</ul>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Explicabo, aliquam!</p>
-								<div class="product-ratings">
-									<ul class="list-inline">
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star-half"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-lg-4">
-					<!-- product card -->
-					<div class="product-item bg-light">
-						<div class="card">
-							<div class="thumb-content">
-								<!-- <div class="price">$200</div> -->
-								<a href="">
-									<img class="card-img-top img-fluid" src="images/products/products-2.jpg"
-										alt="Card image cap">
-								</a>
-							</div>
-							<div class="card-body">
-								<h4 class="card-title"><a href="">Full Study Table Combo</a></h4>
-								<ul class="list-inline product-meta">
-									<li class="list-inline-item">
-										<a href=""><i class="fa fa-folder-open-o"></i>Furnitures</a>
-									</li>
-									<li class="list-inline-item">
-										<a href=""><i class="fa fa-calendar"></i>26th December</a>
-									</li>
-								</ul>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Explicabo, aliquam!</p>
-								<div class="product-ratings">
-									<ul class="list-inline">
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item"><i class="fa fa-star"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-lg-4">
-					<!-- product card -->
-					<div class="product-item bg-light">
-						<div class="card">
-							<div class="thumb-content">
-								<!-- <div class="price">$200</div> -->
-								<a href="">
-									<img class="card-img-top img-fluid" src="images/products/products-3.jpg"
-										alt="Card image cap">
-								</a>
-							</div>
-							<div class="card-body">
-								<h4 class="card-title"><a href="">11inch Macbook Air</a></h4>
-								<ul class="list-inline product-meta">
-									<li class="list-inline-item">
-										<a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
-									</li>
-									<li class="list-inline-item">
-										<a href=""><i class="fa fa-calendar"></i>26th December</a>
-									</li>
-								</ul>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Explicabo, aliquam!</p>
-								<div class="product-ratings">
-									<ul class="list-inline">
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-										<li class="list-inline-item"><i class="fa fa-star"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<h4>Qui sommes-nous?</h4>
+            <p>Nous sommes une association formée de 5 élèves qui essaie d’aider les étudiants à réduire leur frais pour le matériel scolaire sur l’achat de livres,<br> en proposant un site qui leur permettrai d’acheter des livres d’anciens étudiants et de aussi les vendre à leur tour. </p>
+            <h4>Quels sont nos buts?</h4>
+            <p>Nous faisons ce site pour offrir une alternative aux écoliers, étudiants, apprentis, universitaires, avec des moyens limités.</p>
+        </div>  
+    </section>
+	<section class="section bg-gray">
+		<div class="section-title">
+			<h2>Pourquoi utiliser ce site?</h2>
+		</div>
+		<div class="text-center">
+			<p>Les livres après être acheté peuvent être utilisés plusieurs années mêmes une décennie si le programme scolaire ne change pas.<br>N’avez-vous jamais jeté des livres en fin d’années scolaire qui aurait pu servir à de future personne ? <br> N’avez-vous pas des vieux livres qui traînent dans vos armoires ou dans vos caves en attente d’être jetés ?<br><br>C’est l’occasion de les mettres en vente ! </p>
 		</div>
 	</section>
-
-	<!--==========================================
-	=            All Category Section            =
-	===========================================-->
-
-	<section class=" section">
-		<!-- Container Start -->
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<!-- Section title -->
-					<div class="section-title">
-						<h2>All Categories</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
-					</div>
-					<div class="row">
-						<!-- Category list -->
-						<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-							<div class="category-block">
-								<div class="header">
-									<i class="fa fa-laptop icon-bg-1"></i>
-									<h4>Electronics</h4>
-								</div>
-								<ul class="category-list">
-									<li><a href="category.php">Laptops <span>93</span></a></li>
-									<li><a href="category.php">Iphone <span>233</span></a></li>
-									<li><a href="category.php">Microsoft <span>183</span></a></li>
-									<li><a href="category.php">Monitors <span>343</span></a></li>
-								</ul>
-							</div>
-						</div> <!-- /Category List -->
-						<!-- Category list -->
-						<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-							<div class="category-block">
-								<div class="header">
-									<i class="fa fa-apple icon-bg-2"></i>
-									<h4>Restaurants</h4>
-								</div>
-								<ul class="category-list">
-									<li><a href="category.php">Cafe <span>393</span></a></li>
-									<li><a href="category.php">Fast food <span>23</span></a></li>
-									<li><a href="category.php">Restaurants <span>13</span></a></li>
-									<li><a href="category.php">Food Track<span>43</span></a></li>
-								</ul>
-							</div>
-						</div> <!-- /Category List -->
-						<!-- Category list -->
-						<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-							<div class="category-block">
-								<div class="header">
-									<i class="fa fa-home icon-bg-3"></i>
-									<h4>Real Estate</h4>
-								</div>
-								<ul class="category-list">
-									<li><a href="category.php">Farms <span>93</span></a></li>
-									<li><a href="category.php">Gym <span>23</span></a></li>
-									<li><a href="category.php">Hospitals <span>83</span></a></li>
-									<li><a href="category.php">Parolurs <span>33</span></a></li>
-								</ul>
-							</div>
-						</div> <!-- /Category List -->
-						<!-- Category list -->
-						<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-							<div class="category-block">
-								<div class="header">
-									<i class="fa fa-shopping-basket icon-bg-4"></i>
-									<h4>Shoppings</h4>
-								</div>
-								<ul class="category-list">
-									<li><a href="category.php">Mens Wears <span>53</span></a></li>
-									<li><a href="category.php">Accessories <span>212</span></a></li>
-									<li><a href="category.php">Kids Wears <span>133</span></a></li>
-									<li><a href="category.php">It & Software <span>143</span></a></li>
-								</ul>
-							</div>
-						</div> <!-- /Category List -->
-						<!-- Category list -->
-						<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-							<div class="category-block">
-								<div class="header">
-									<i class="fa fa-briefcase icon-bg-5"></i>
-									<h4>Jobs</h4>
-								</div>
-								<ul class="category-list">
-									<li><a href="category.php">It Jobs <span>93</span></a></li>
-									<li><a href="category.php">Cleaning & Washing <span>233</span></a></li>
-									<li><a href="category.php">Management <span>183</span></a></li>
-									<li><a href="category.php">Voluntary Works <span>343</span></a></li>
-								</ul>
-							</div>
-						</div> <!-- /Category List -->
-						<!-- Category list -->
-						<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-							<div class="category-block">
-								<div class="header">
-									<i class="fa fa-car icon-bg-6"></i>
-									<h4>Vehicles</h4>
-								</div>
-								<ul class="category-list">
-									<li><a href="category.php">Bus <span>193</span></a></li>
-									<li><a href="category.php">Cars <span>23</span></a></li>
-									<li><a href="category.php">Motobike <span>33</span></a></li>
-									<li><a href="category.php">Rent a car <span>73</span></a></li>
-								</ul>
-							</div>
-						</div> <!-- /Category List -->
-						<!-- Category list -->
-						<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-							<div class="category-block">
-								<div class="header">
-									<i class="fa fa-paw icon-bg-7"></i>
-									<h4>Pets</h4>
-								</div>
-								<ul class="category-list">
-									<li><a href="category.php">Cats <span>65</span></a></li>
-									<li><a href="category.php">Dogs <span>23</span></a></li>
-									<li><a href="category.php">Birds <span>113</span></a></li>
-									<li><a href="category.php">Others <span>43</span></a></li>
-								</ul>
-							</div>
-						</div> <!-- /Category List -->
-						<!-- Category list -->
-						<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-							<div class="category-block">
-								<div class="header">
-									<i class="fa fa-laptop icon-bg-8"></i>
-									<h4>Services</h4>
-								</div>
-								<ul class="category-list">
-									<li><a href="category.php">Cleaning <span>93</span></a></li>
-									<li><a href="category.php">Car Washing <span>233</span></a></li>
-									<li><a href="category.php">Clothing <span>183</span></a></li>
-									<li><a href="category.php">Business <span>343</span></a></li>
-								</ul>
-							</div>
-						</div> <!-- /Category List -->
-					</div>
-				</div>
-			</div>
+	<section class="section">
+		<div class="section-title">
+			<h2>Écologie!</h2>
 		</div>
-		<!-- Container End -->
+		<div class="text-center">
+			<p>Pour nous le climat est une cause qui nous tient à cœur, par le biais de ce site nous voulons promouvoir la réutilisation de matériel, ainsi qu’éviter le gaspillage.<br> Nous devons freiner notre consommation de Carbone en arrêtant de fabriquer de nouveaux objets et privilégier les articles de seconde main.  </p>
+		</div>
+	</section>
+	<section class="section bg-gray">
+		<div class="section-title">
+			<h2>Notre politique</h2>
+		</div>
+		<div class="text-center">
+			<p>Nous faisons ce site pour rendre service, les échanges entre les personnes doivent se faire dans le respect et la bonne volonté.<br> La surenchère ou "au plus offrants" ne sont pas permis.<br> Les prix ne doivent pas être excessif et ne doivent pas dépasser les prix en magasins.<br> Toutes personnes qui ne respectent pas le règlement, peuvent se faire bannir définitivement du site. </p>
+		</div>
 	</section>
 	<?php include_once "../TIP-FAL/php/include/footer.php"; ?>
 	<?php include_once "../TIP-FAL/php/include/scripts.php"; ?>
 </body>
-
 </html>
