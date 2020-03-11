@@ -19,7 +19,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<!-- TODO: Fonction PHP pour le tri -->
+						<!--TODO: Fonction PHP pour le tri-->
 						<div class="advance-search">
 							<form>
 								<div class="form-row">
@@ -76,23 +76,23 @@
 									$image= $allBookData[$x]['bookImagePath'];
 									$seller = $allBookData[$x]['username'];
 
-									echo'<div class="col-sm-12 col-lg-4 col-md-6" style="height:20%;">
+									echo'<div class="col-sm-12 col-lg-4 col-md-6">
 											<div class="product-item bg-light">
-												<div class="card">
+												<div class="card" style="height:460px !important;">
 													<div class="thumb-content">
-														<!--<div class="price">$200</div>-->
+														<div class="price">'.$price.' CHF</div>
 														<a href="book.php?page=Livres&id='.$id.'">
 															<img class="bookImage" src="../images/books/'.$image.'">
 														</a>
 													</div>
-													<div class="card-body">
-														<h4 class="card-title"><a href="book.php?page=Livres&id='.$id.'">'.$title.'</a></h4>
+													<div class="card-body" style="height:100% !important;">
+														<h4 class="card-title"><a href="book.php?page=Livres&id='.$id.'">'.substr($title, 0, 66).'</a></h4>
 														<ul class="list-inline product-meta">
 															<li class="list-inline-item">
-																<p><i class="fa fa-info"></i>'.$genre.'</p>
+																<p><i class="fa fa-info"></i> '.$genre.'</p>
 															</li>
 															<li class="list-inline-item">
-																<p><i class="fa fa-calendar"></i>Paru le: '.$releaseDate.'</p>
+																<p><i class="fa fa-calendar"></i> Paru le: '.$releaseDate.'</p>
 															</li>
 														</ul>
 														<p class="card-text">Édition: '.$editor.'</p>
