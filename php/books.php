@@ -12,37 +12,6 @@
 			include_once 'include/objDB.php';
 			$objDB = new objDB();
 		?>
-		<!--lien vers 1 livre 
-			"/php/book.php?page=Livres&id="
-		-->
-		<section class="page-search">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<!--TODO: Fonction PHP pour le tri-->
-						<div class="advance-search">
-							<form>
-								<div class="form-row">
-									<div class="form-group col-md-4">
-										<input type="text" class="form-control" id="inputtext4"
-											placeholder="Titre du livre">
-									</div>
-									<div class="form-group col-md-3">
-										<input type="text" class="form-control" id="inputCategory4" placeholder="Genre">
-									</div>
-									<div class="form-group col-md-3">
-										<input type="text" class="form-control" id="inputLocation4" placeholder="Langue">
-									</div>
-									<div class="form-group col-md-2">
-										<button type="submit" class="btn btn-primary">Recherche</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 		<section class="section-sm">
 			<div class="container">
 				<div class="row">
@@ -51,19 +20,58 @@
 							<div class="row">
 								<div class="col-md-6">
 									<strong>Trier</strong>
-									<select>
-										<option>Date de mise en vente</option>
+									<select id="sort" onchange="sortBooks()">
+										<option disabled selected>---</option>
+										<option value="0">Par défaut</option>
 										<option value="1">Prix croissant</option>
 										<option value="2">Prix décroissant</option>
 										<option value="3">Langue</option>
 									</select>
+									<script>
+										function sortBooks() {
+											var x = parseInt(document.getElementById("sort").value);
+											
+											switch (x){
+												case 0:
+													location.replace("http://127.0.0.1:8080/TIP-FAL/php/books.php?page=Livres");
+													break;
+												case 1:
+													location.replace("http://127.0.0.1:8080/TIP-FAL/php/books.php?page=Livres&f=pra");
+													break;
+												case 2:
+													location.replace("http://127.0.0.1:8080/TIP-FAL/php/books.php?page=Livres&f=prd");
+													break;
+												case 3:
+													location.replace("http://127.0.0.1:8080/TIP-FAL/php/books.php?page=Livres&f=lang");
+													break;
+											}
+										}	
+									</script>
 								</div>
 							</div>
 						</div>
 						<div class="product-grid-list">
 							<div class="row mt-30">
 							<?php
-								$allBookData = $objDB->getAllBookData();
+								$filter = "book.idBook ASC";
+								if(isset($_GET['f'])){
+									switch($_GET['f']){
+										case "pra":
+											$filter = "price ASC";
+											$allBookData = $objDB->getAllBookData($filter);
+										break;
+										case "prd":
+											$filter = "price DESC";
+											$allBookData = $objDB->getAllBookData($filter);
+										break;
+										case "lang":
+											$filter = "language";
+											$allBookData = $objDB->getAllBookData($filter);
+									}
+								}else{
+									$allBookData = $objDB->getAllBookData($filter);
+								}
+								
 								for($x = 0; $x < count($allBookData); $x++){
 									$id = $allBookData[$x]['idBook'];
 									$title = $allBookData[$x]['title'];
@@ -78,7 +86,7 @@
 
 									echo'<div class="col-sm-12 col-lg-4 col-md-6">
 											<div class="product-item bg-light">
-												<div class="card" style="height:460px !important;">
+												<div class="card" style="height:500px !important;">
 													<div class="thumb-content">
 														<div class="price">'.$price.' CHF</div>
 														<a href="book.php?page=Livres&id='.$id.'">
@@ -94,8 +102,13 @@
 															<li class="list-inline-item">
 																<p><i class="fa fa-calendar"></i> Paru le: '.$releaseDate.'</p>
 															</li>
+															<li class="list-inline-item">
+																<p><i class="fa fa-book"></i> Langue: '.$language.'</p>
+															</li>
+															<li class="list-inline-item">
+																<p class="card-text">Édition: '.$editor.'</p>
+															</li>
 														</ul>
-														<p class="card-text">Édition: '.$editor.'</p>
 													</div>
 												</div>
 											</div>
@@ -127,6 +140,7 @@
 				</div>
 			</div>
 		</section>
+		<script src="../../plugins/jquery/jquery.min.js"></script>
 		<?php include_once "include/footer.php"; ?>
 		<?php include_once "include/scripts.php"; ?>
 	</body>
