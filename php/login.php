@@ -37,8 +37,6 @@ if(session_status() == PHP_SESSION_NONE){
                 <button type="submit"
                   class="d-block py-3 px-5 bg-primary text-white border-0 rounded font-weight-bold mt-3">Se
                   connecter</button>
-                <!-- TODO: faire fonctionner la modification du mot de passe s'il est oublié -->
-                <a class="mt-3 d-block  text-primary" href="#">Mot de passe oublié?</a>
                 <a class="mt-3 d-inline-block text-primary" href="register.php?page=Créer un compte">Créer un compte</a>
               </fieldset>
             </form>
