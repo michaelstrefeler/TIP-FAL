@@ -9,23 +9,23 @@
 	<title>Foire aux livres - Acceuil</title>
 
 	<!-- PLUGINS CSS STYLE -->
-	<link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+	<link href="../../plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 	<!-- Bootstrap -->
-	<link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Font Awesome -->
-	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Owl Carousel -->
-	<link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
-	<link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+	<link href="../../plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+	<link href="../../plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
 	<!-- Fancy Box -->
-	<link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
-	<link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
-	<link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+	<link href="../../plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+	<link href="../../plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+	<link href="../../plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
 	<!-- CUSTOM CSS -->
-	<link href="css/style.css" rel="stylesheet">
+	<link href="../../css/style.css" rel="stylesheet">
 
 	<!-- FAVICON -->
-	<link href="img/favicon.png" rel="shortcut icon">
+	<link href="../../img/favicon.png" rel="shortcut icon">
 
 	<!-- Besoin de ça pour internet explorer -->
 	<!--[if lt IE 9]>
@@ -36,8 +36,8 @@
 
 <body class="body-wrapper">
 	<?php 
-		include_once "../TIP-FAL/php/include/nav.php"; 
-		include_once '../TIP-FAL/php/include/objDB.php';
+		include_once '../FR/include/nav.php';
+		include_once '../FR/include/objDB.php';
 		$connection = new objDB();
 	?>
 
@@ -88,7 +88,9 @@
 			<p>Nous faisons ce site pour rendre service, les échanges entre les personnes doivent se faire dans le respect et la bonne volonté.<br> La surenchère ou "au plus offrants" ne sont pas permis.<br> Les prix ne doivent pas être excessif et ne doivent pas dépasser les prix en magasins.<br> Toutes personnes qui ne respectent pas le règlement, peuvent se faire bannir définitivement du site. </p>
 		</div>
 	</section>
-	<?php include_once "../TIP-FAL/php/include/footer.php"; ?>
-	<?php include_once "../TIP-FAL/php/include/scripts.php"; ?>
+	<?php
+		include_once "../FR/include/footer.php";
+		include_once "../FR/include/scripts.php";
+	?>
 </body>
 </html>

@@ -41,7 +41,7 @@
 							<!-- User Image -->
 							<div class="profile-thumb">
 								<?php
-									echo'<img src="../images/user/'. $photo .'" alt="photo de profile" class="rounded-circle">';
+									echo'<img src="../../images/user/'. $photo .'" alt="photo de profile" class="rounded-circle">';
 								?>
 							</div>
 							<!-- User Name -->
@@ -49,7 +49,7 @@
 								echo'<h5 class="text-center">'. $firstName .' '. $lastName .' </h5>';
 								echo'<p>Pseudo : '. $username .'</p>';
 							?>
-							<a href="../php/user-profile.php?page=Utilisateur" class="btn btn-main-sm">Modifier votre profil</a>
+							<a href="../FR/user-profile.php?page=Utilisateur" class="btn btn-main-sm">Modifier votre profil</a>
 						</div>
 						<!-- Dashboard Links -->
 						<div class="widget user-dashboard-menu">

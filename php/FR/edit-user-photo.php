@@ -23,7 +23,7 @@
 
                 //Renommage du fichier et définition du dossier
                 $_FILES['input-file']['name'] = $newName;
-                $destinDirectory = "../images/user/";
+                $destinDirectory = "../../images/user/";
                 $destinName= $_FILES["input-file"]["name"];
                 // renommage et copie du fichier dans le dossier final définit plus haut
                 if (move_uploaded_file($_FILES["input-file"]["tmp_name"],
@@ -34,10 +34,10 @@
                     );
 
                     $changeImage=$objDB->editUserImage($neededData);
-                    echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/user-profile.php?page=Utilisateur');</script>";
+                    echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?page=Utilisateur');</script>";
                 }
             }else{
-                echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/user-profile.php?page=Utilisateur'); alert('type de fichier non accepté! Veuillez mettre un .PNG/.jpg/.tiff ou un .JPEG');</script>";
+                echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?page=Utilisateur'); alert('type de fichier non accepté! Veuillez mettre un .PNG/.jpg/.tiff ou un .JPEG');</script>";
             }
     } else {
         $error = "";
@@ -53,6 +53,6 @@
                 break;
             }
         }
-        echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/user-profile.php?page=Utilisateur'); alert('". $error ."');</script>";
+        echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?page=Utilisateur'); alert('". $error ."');</script>";
     }  
 ?>

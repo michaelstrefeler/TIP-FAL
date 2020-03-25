@@ -36,7 +36,7 @@
 							<!-- photo de profil -->
 							<div class="profile-thumb">
 								<?php
-									echo'<img src="../images/user/'. $photo .'" alt="photo de profile" class="rounded-circle">';
+									echo'<img src="../../images/user/'. $photo .'" alt="photo de profile" class="rounded-circle">';
 								?>
 							</div>
 							<!-- nom complet et pseudo -->

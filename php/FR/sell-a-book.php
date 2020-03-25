@@ -51,10 +51,10 @@
                     );
 
                     $addtoSellsTable = $objDB->addtoSellsTable($sellerInfo);
-                    echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/book.php?page=Livres&id=". $bookId ."');</script>";
+                    echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/book.php?page=Livres&id=". $bookId ."');</script>";
                 }
             }else{
-                echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/dashboard.php?page=Tableau de bord&action=1'); alert('type de fichier non accepté! Veuillez mettre un .PNG/.jpg/.tiff ou un .JPEG');</script>";
+                echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/dashboard.php?page=Tableau de bord&action=1'); alert('type de fichier non accepté! Veuillez mettre un .PNG/.jpg/.tiff ou un .JPEG');</script>";
             }
     } else {
         $error = "";
@@ -70,5 +70,5 @@
                 break;
             }
         }
-        echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/dashboard.php?page=Tableau de bord&action=1'); alert('". $error ."');</script>";
+        echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/dashboard.php?page=Tableau de bord&action=1'); alert('". $error ."');</script>";
     }  

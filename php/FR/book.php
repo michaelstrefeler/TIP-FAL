@@ -52,7 +52,7 @@
 										aria-labelledby="pills-home-tab">
 										<h3 class="tab-title">Informations utiles</h3>
 										<?php
-											echo'<img src="../images/books/'. $image .'" style="float:left; max-width:150px; height:auto;" alt="photo du livre">';
+											echo'<img src="../../images/books/'. $image .'" style="float:left; max-width:150px; height:auto;" alt="photo du livre">';
 										?>	
 										<p style="padding-left:25%;"> Édition: <?php echo $editor; ?></p>
 										<p style="padding-left:25%;"> Année de parution: <?php echo $releaseYear; ?></p>
@@ -73,7 +73,7 @@
 							<!-- User Profile widget -->
 							<div class="widget user">
 								<?php
-									echo'<img src="../images/user/'. $userImage .'" style="max-width: 30%; height:auto; float:right;" alt="photo de profile" class="rounded-circle">';
+									echo'<img src="../../images/user/'. $userImage .'" style="max-width: 30%; height:auto; float:right;" alt="photo de profile" class="rounded-circle">';
 								?>
 								<h2>Vendeur</h2>
 								<h3><?php echo $firstName.' '.$lastName ; ?></h3>

@@ -29,7 +29,7 @@
                             echo'
                             <tr>
                                 <td class="product-thumb">
-                                    <img width="100px" height="auto" style="padding-right:5%;" src="../images/books/'.$userBooks[$index]['bookImagePath'].'" alt="photo du livre">
+                                    <img width="100px" height="auto" style="padding-right:5%;" src="../../images/books/'.$userBooks[$index]['bookImagePath'].'" alt="photo du livre">
                                 </td>
                                 <td class="product-details">
                                     <h3 class="title">'.$userBooks[$index]['title'].'</h3>
