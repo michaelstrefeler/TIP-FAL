@@ -27,17 +27,16 @@ if(session_status() == PHP_SESSION_NONE){
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-8 align-item-center">
           <div class="border">
-            <h3 class="bg-gray p-4">Se connecter</h3>
+            <h3 class="bg-gray p-4">Anmelden</h3>
             <form method="post">
               <fieldset class="p-4">
-                <input type="text" name="username" id="username" placeholder="Pseudo" class="border p-3 w-100 my-2"
+                <input type="text" name="username" id="username" placeholder="Benutzername" class="border p-3 w-100 my-2"
                   required>
-                <input type="password" name="password" id="password" placeholder="Mot de passe"
+                <input type="password" name="password" id="password" placeholder="Passwort"
                   class="border p-3 w-100 my-2" required>
                 <button type="submit"
-                  class="d-block py-3 px-5 bg-primary text-white border-0 rounded font-weight-bold mt-3">Se
-                  connecter</button>
-                <a class="mt-3 d-inline-block text-primary" href="register.php?page=Créer un compte">Créer un compte</a>
+                  class="d-block py-3 px-5 bg-primary text-white border-0 rounded font-weight-bold mt-3">Anmelden</button>
+                <a class="mt-3 d-inline-block text-primary" href="register.php?seite=Konto-erstellen">Ein Konto erstellen</a>
               </fieldset>
             </form>
 
@@ -53,9 +52,9 @@ if(session_status() == PHP_SESSION_NONE){
                   }
                 }
                 if($isRealAccount == true){
-                  echo "<meta http-equiv='refresh' content='0; URL=user-profile.php?page=Utilisateur&lang=FR'>";
+                  echo "<meta http-equiv='refresh' content='0; URL=user-profile.php?seite=Konto&lang=DE'>";
                 }else{
-                  echo "<p style='color: red'>Login ou mot de passe erroné!</p>";
+                  echo "<p style='color: red'>Benutzername oder Passwort falsch!</p>";
                 }
               }
             ?>
@@ -65,7 +64,7 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
   </section>
 
-  <!-- Pied de page -->
+  <!-- Pied de seite -->
   <?php include_once "include/footer.php"; ?>
 
   <!-- JAVASCRIPT -->

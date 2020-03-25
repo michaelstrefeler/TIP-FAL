@@ -34,25 +34,25 @@
                     );
 
                     $changeImage=$objDB->editUserImage($neededData);
-                    echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?page=Utilisateur&lang=FR');</script>";
+                    echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?seite=Konto&lang=DE');</script>";
                 }
             }else{
-                echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?page=Utilisateur&lang=FR'); alert('type de fichier non accepté! Veuillez mettre un .PNG/.jpg/.tiff ou un .JPEG');</script>";
+                echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?seite=Konto&lang=DE'); alert('Achtung! Stellen sie .PNG/.jpg/.tiff oder einen .JPEG');</script>";
             }
     } else {
         $error = "";
         switch ($_FILES['input-file']['error']) {
             case UPLOAD_ERR_NO_FILE:
-                $error = "Vous n'avez pas envoyé de ficher.";
+                $error = "Keine Akte";
                 break;
             case UPLOAD_ERR_INI_SIZE:
-                $error = 'Fichier trop grand.';
+                $error = 'Akte zu groß';
                 break;
             case UPLOAD_ERR_FORM_SIZE:
-                $error = 'Fichier trop grand.';
+                $error = 'Akte zu groß';
                 break;
             }
         }
-        echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?page=Utilisateur&lang=FR'); alert('". $error ."');</script>";
+        echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?seite=Konto&lang=DE'); alert('". $error ."');</script>";
     }  
 ?>

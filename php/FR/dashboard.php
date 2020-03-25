@@ -57,34 +57,34 @@
 								<?php
 									switch($action){
 										default:
-											echo '<li class="active"><a href="dashboard.php?page=Tableau de bord&action=0"><i class="fa fa-book"></i>Mes livres</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=2"><i class="fa fa-edit"></i>Modifier un livre</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=3"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';
+											echo '<li class="active"><a href="dashboard.php?page=Tableau de bord&action=0&lang=FR"><i class="fa fa-book"></i>Mes livres</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=1&lang=FR"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=2&lang=FR"><i class="fa fa-edit"></i>Modifier un livre</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=3&lang=FR"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';
 											break;
 										case 0:
-											echo '<li class="active"><a href="dashboard.php?page=Tableau de bord&action=0"><i class="fa fa-book"></i>Mes livres</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=2"><i class="fa fa-edit"></i>Modifier un livre</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=3"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';
+											echo '<li class="active"><a href="dashboard.php?page=Tableau de bord&action=0&lang=FR"><i class="fa fa-book"></i>Mes livres</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=1&lang=FR"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=2&lang=FR"><i class="fa fa-edit"></i>Modifier un livre</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=3&lang=FR"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';
 											break;	
 										case 1:
-											echo '<li><a href="dashboard.php?page=Tableau de bord&action=0"><i class="fa fa-book"></i>Mes livres</a></li>
-												  <li class="active"><a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=2"><i class="fa fa-edit"></i>Modifier un livre</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=3"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';
+											echo '<li><a href="dashboard.php?page=Tableau de bord&action=0&lang=FR"><i class="fa fa-book"></i>Mes livres</a></li>
+												  <li class="active"><a href="dashboard.php?page=Tableau de bord&action=1&lang=FR"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=2&lang=FR"><i class="fa fa-edit"></i>Modifier un livre</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=3&lang=FR"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';
 											break;
 										case 2:
-											echo '<li><a href="dashboard.php?page=Tableau de bord&action=0"><i class="fa fa-book"></i>Mes livres</a></li>
-											      <li><a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
-												  <li class="active"><a href="dashboard.php?page=Tableau de bord&action=2"><i class="fa fa-edit"></i>Modifier un livre</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=3"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';	
+											echo '<li><a href="dashboard.php?page=Tableau de bord&action=0&lang=FR"><i class="fa fa-book"></i>Mes livres</a></li>
+											      <li><a href="dashboard.php?page=Tableau de bord&action=1&lang=FR"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
+												  <li class="active"><a href="dashboard.php?page=Tableau de bord&action=2&lang=FR"><i class="fa fa-edit"></i>Modifier un livre</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=3&lang=FR"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';	
 											break;
 										case 3:
-											echo '<li><a href="dashboard.php?page=Tableau de bord&action=0"><i class="fa fa-book"></i>Mes livres</a></li>
-											      <li><a href="dashboard.php?page=Tableau de bord&action=1"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
-												  <li><a href="dashboard.php?page=Tableau de bord&action=2"><i class="fa fa-edit"></i>Modifier un livre</a></li>
-												  <li class="active"><a href="dashboard.php?page=Tableau de bord&action=3"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';	
+											echo '<li><a href="dashboard.php?page=Tableau de bord&action=0&lang=FR"><i class="fa fa-book"></i>Mes livres</a></li>
+											      <li><a href="dashboard.php?page=Tableau de bord&action=1&lang=FR"><i class="fa fa-plus-circle"></i>Vendre un livre</a></li>
+												  <li><a href="dashboard.php?page=Tableau de bord&action=2&lang=FR"><i class="fa fa-edit"></i>Modifier un livre</a></li>
+												  <li class="active"><a href="dashboard.php?page=Tableau de bord&action=3&lang=FR"><i class="fa fa-file-archive-o"></i>Livres vendus</a></li>';	
 											break;
 									}
 								?>

@@ -17,5 +17,5 @@ $bookData = array(
 );
 $idBook = $_POST['idBook'];
 $editBook = $objDB->editBook($idBook, $bookData);
- echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/dashboard.php?page=Tableau de bord&action=0&lang=FR');</script>";
+ echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/dashboard.php?seite=Handlungen&action=0&lang=DE');</script>";
 ?>

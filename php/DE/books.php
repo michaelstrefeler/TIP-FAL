@@ -25,13 +25,13 @@
 						<div class="category-search-filter">
 							<div class="row">
 								<div class="col-md-6">
-									<strong>Trier</strong>
+									<strong>Sortieren</strong>
 									<select id="sort" onchange="sortBooks()">
 										<option disabled selected>---</option>
-										<option value="0">Par défaut</option>
-										<option value="1">Prix croissant</option>
-										<option value="2">Prix décroissant</option>
-										<option value="3">Langue</option>
+										<option value="0">Standard</option>
+										<option value="1">Günstigste</option>
+										<option value="2">Teuerste</option>
+										<option value="3">Sprache</option>
 									</select>
 									<script>
 										function sortBooks() {
@@ -39,16 +39,16 @@
 											
 											switch (x){
 												case 0:
-													location.replace("http://127.0.0.1:8080/TIP-FAL/php/FR/books.php?page=Livres&lang=FR");
+													location.replace("http://127.0.0.1:8080/TIP-FAL/php/DE/books.php?seite=Bucher&lang=DE");
 													break;
 												case 1:
-													location.replace("http://127.0.0.1:8080/TIP-FAL/php/FR/books.php?page=Livres&f=pra&lang=FR");
+													location.replace("http://127.0.0.1:8080/TIP-FAL/phpp/DE/books.php?seite=Bucher&lang=DE&f=pra");
 													break;
 												case 2:
-													location.replace("http://127.0.0.1:8080/TIP-FAL/php/FR/books.php?page=Livres&f=prd&lang=FR");
+													location.replace("http://127.0.0.1:8080/TIP-FAL/phpp/DE/books.php?seite=Bucher&lang=DE&f=prd");
 													break;
 												case 3:
-													location.replace("http://127.0.0.1:8080/TIP-FAL/php/FR/books.php?page=Livres&f=lang&lang=FR");
+													location.replace("http://127.0.0.1:8080/TIP-FAL/phpp/DE/books.php?seite=Bucher&lang=DE&f=lang");
 													break;
 											}
 										}	
@@ -97,12 +97,12 @@
 														<div class="price">'.$price.' CHF</div>';
 														
 													if($bookLinks == true){
-														echo'<a href="book.php?page=Livres&id='.$id.'">
+														echo'<a href="book.php?seite=Livres&id='.$id.'">
 																<img class="bookImage" src="../../images/books/'.$image.'">
 															</a>
 															</div>
 													<div class="card-body" style="height:100% !important;">
-														<h4 class="card-title"><a href="book.php?page=Livres&id='.$id.'&lang=FR">'.substr($title, 0, 66).'</a></h4>';
+														<h4 class="card-title"><a href="book.php?seite=Livres&id='.$id.'">'.substr($title, 0, 66).'</a></h4>';
 													}else{
 														echo'<img class="bookImage" src="../../images/books/'.$image.'">
 														</div>
@@ -115,13 +115,13 @@
 																<p><i class="fa fa-info"></i> '.$genre.'</p>
 															</li>
 															<li class="list-inline-item">
-																<p><i class="fa fa-calendar"></i> Paru le: '.$releaseDate.'</p>
+																<p><i class="fa fa-calendar"></i> Erscheinungsdatum: '.$releaseDate.'</p>
 															</li>
 															<li class="list-inline-item">
-																<p><i class="fa fa-book"></i> Langue: '.$language.'</p>
+																<p><i class="fa fa-book"></i> Sprache: '.$language.'</p>
 															</li>
 															<li class="list-inline-item">
-																<p class="card-text">Édition: '.$editor.'</p>
+																<p class="card-text">Verlag: '.$editor.'</p>
 															</li>
 														</ul>
 													</div>

@@ -15,5 +15,5 @@
     
     $addUser=$objDB->addNewUser($userInfo);
 
-    header("Location: login.php?page=Se connecter&lang=FR");
+    header("Location: login.php?seite=Anmelden&lang=DE");
 ?>
