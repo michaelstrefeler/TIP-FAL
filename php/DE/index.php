@@ -47,6 +47,7 @@
 				<div class="col-md-12">
 					<div class="content-block">
 						<h1>Hören Sie auf, Ihre Bücher zu verschwenden!</h1>
+						<p>Verkauf deine Bücher!</p>
 					</div>
 				</div>
 			</div>
