@@ -95,7 +95,7 @@
 
 								function validatePassword() {
 									if (password.value != confirm_password.value) {
-									confirm_password.setCustomValidity("Les mots de passe ne correspondent pas!");
+									confirm_password.setCustomValidity("Passwörter stimmen nicht überein!");
 									} else {
 									confirm_password.setCustomValidity('');
 									}

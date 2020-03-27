@@ -17,10 +17,10 @@
                     );
             $changePassword = $objDB->changeUserPassword($neededData);
             
-            echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?seite=Utilisateur'); alert('Votre mot de passe a été modifié');</script>";
+            echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?seite=Konto'); alert('Votre mot de passe a été modifié');</script>";
 
         }else{
-            echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?seite=Utilisateur'); alert('Mot de passe erroné');</script>";  
+            echo"<script>window.location.replace('http://127.0.0.1:8080/TIP-FAL/php/FR/user-profile.php?seite=Konto'); alert('Mot de passe erroné');</script>";  
         }
     }
 ?>
