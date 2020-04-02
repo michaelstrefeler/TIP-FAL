@@ -10,7 +10,7 @@
 				<div class="col-md-12">
 					<nav class="navbar navbar-expand-lg navigation">
 						<a class="navbar-brand" href="../../../TIP-FAL/php/DE/index.php?seite=Startseite&lang=DE">
-							<img src="../../../TIP-FAL/images/logo.png" alt="logo">
+							<img src="../../../TIP-FAL/images/logo.png" style="max-height:50px; width:auto;" alt="logo">
 						</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse"
 							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
