@@ -33,9 +33,9 @@
                                 </td>
                                 <td class="product-details">
                                     <h3 class="title">'.$userBooks[$index]['title'].'</h3>
-                                    <span class="add-id"><strong>Édition:</strong>'.$userBooks[$index]['editor'].'</span>
-                                    <span><strong>Langue: </strong>'.$userBooks[$index]['language'].'</span>
-                                    <span><strong>Paru le: </strong><time>'.$userBooks[$index]['releaseDate'].'</time></span>
+                                    <span class="add-id"><strong>Verlag:</strong>'.$userBooks[$index]['editor'].'</span>
+                                    <span><strong>Sprache: </strong>'.$userBooks[$index]['language'].'</span>
+                                    <span><strong>Erscheinungsdatum: </strong><time>'.$userBooks[$index]['releaseDate'].'</time></span>
                                 </td>
                                 <td class="product-category"><span class="categories">'.$userBooks[$index]['genre'].'</span></td>
                                 <td class="action">
