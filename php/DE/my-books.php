@@ -35,7 +35,7 @@
                                     <h3 class="title">'.$userBooks[$index]['title'].'</h3>
                                     <span class="add-id"><strong>Verlag:</strong>'.$userBooks[$index]['editor'].'</span>
                                     <span><strong>Sprache: </strong>'.$userBooks[$index]['language'].'</span>
-                                    <span><strong>Erscheinungsdatum: </strong><time>'.$userBooks[$index]['releaseDate'].'</time></span>
+                                    <span><strong><i class="fa fa-calendar"></i></strong><time>'.$userBooks[$index]['releaseDate'].'</time></span>
                                 </td>
                                 <td class="product-category"><span class="categories">'.$userBooks[$index]['genre'].'</span></td>
                                 <td class="action">
