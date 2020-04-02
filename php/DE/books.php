@@ -97,12 +97,12 @@
 														<div class="price">'.$price.' CHF</div>';
 														
 													if($bookLinks == true){
-														echo'<a href="book.php?seite=Livres&id='.$id.'">
+														echo'<a href="book.php?seite=Bücher&id='.$id.'">
 																<img class="bookImage" src="../../images/books/'.$image.'">
 															</a>
 															</div>
 													<div class="card-body" style="height:100% !important;">
-														<h4 class="card-title"><a href="book.php?seite=Livres&id='.$id.'">'.substr($title, 0, 66).'</a></h4>';
+														<h4 class="card-title"><a href="book.php?seite=Bücher&id='.$id.'">'.substr($title, 0, 66).'</a></h4>';
 													}else{
 														echo'<img class="bookImage" src="../../images/books/'.$image.'">
 														</div>
